@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berimbolo Security</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- navbar start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-opacity-50 fixed-top" data-theme="dark" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#" onclick="showSection('home')"><i class="fa-brands fa-critical-role" style="font-size: 25px;"></i> Berimbolo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#marwa" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="marwa">
+                <ul class="navbar-nav mb-lg-0 justify-content-center d-flex" style="gap: 15px;">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#" onclick="showSection('home')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#" onclick="showSection('aboutus')">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#" onclick="showSection('products')">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#" onclick="showSection('FAQ')">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#" onclick="showSection('locations')" >locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" data-bs-toggle="modal" data-bs-target="#marwa2" href="#">contact us</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-end align-items-center">
+                    <a href="#login" class="me-5 text-light text-decoration-none" onclick="showSection('login')">Login</a>
+                    <a href="https://wa.link/62107l" class="btn btn-outline-light me-4"><i class="fa-brands fa-whatsapp"></i> 456-907-235</a>
+                    <button id="themeToggle" class="btn text-light">
+                        <i id="themeIcon" class="fa-solid fa-sun"></i>
+                    </button>
+                </div>
+                <div id="toast"></div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end-->
+    <!-- hero start-->
+    <div class="mm section" id="home">
+        <section class="one text-light bg-dark bg-opacity-50 " >
+            <img src="house1.jpg" alt="">
+            <h1>Your Safety, Our Mission</h1>
+            <p class=" d-flex justify-content-center">We cover intrusion protection, comfort and automation, fire and life safety, and video surveillance. All integrated in one system.</p>
+        </section>
+    </div>
+    <!-- hero end-->
+    <!-- contact_us start -->
+    <section id="modal" class="model">
+        <div class="modal fade" id="marwa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" style="font-size: 35px;" id="exampleModalLabel">contact us</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-content-center gap-3">
+                        <i class="fa-solid fa-location-dot fs-4 text-secondary"></i>
+                        <p> 123 anywherest..any <br>city,st12345</p>
+                    </div>
+                    <div class="d-flex align-content-center gap-3">
+                        <a class="d-flex align-content-center gap-3" href="https://wa.link/62107l" ><i class="fa-brands fa-whatsapp fs-5 text-secondary"></i> <p>456-907-235</p></a>
+                    </div>
+                    <div class="d-flex align-content-center gap-3">
+                        <i class="fa-solid fa-envelope fs-4 text-secondary"></i>
+                        <p> <a href="#">Berimbolo@gmail.com</a></p>
+                    </div>
+                    <div class="d-flex align-content-center gap-3">
+                        <i class="fa regular fa-globe fs-4 text-secondary"></i>
+                        <p> <a href="#">www.Berimbolsecurity</a></p>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex  gap-3">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact_us end -->
+    <!-- about_us start -->
+    <main id="aboutus" class="mt-5 section" style="padding-top: 70px;margin-bottom: 20px;">
+        <h2 class="text-center">about us</h2>
+        <section class="bb">
+            <!-- section1 start -->
+            <div class="aa mt-5">
+                <div class="row justify-content-center gap-5 gg">
+                    <div class="col-12 col-md-5 align-content-center ">
+                        <h1>our company</h1>
+                        <p>Your safety is our priority at Berimbolo Security! We deliver top-notch solutions like advanced alarm systems, CCTV installations, and 24/7 monitoring to ensure complete peace of mind. With a focus on innovation and reliability, we aim to secure your home and business while making protection effortless. Trust us to provide expert assessments, seamless installations, and unparalleled support.</p>
+                    </div>
+                    <div class="col-12 col-md-3 clin" style="background-image: url(positions-in-a-company.jpeg); background-position: center;"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5 gap-5 gg">
+                <div class="col-12 col-md-3 clin" style="background-image: url(hand.webp);background-position: center;"></div>
+                <article class="col-12 col-md-5 lh-3 my-auto ">
+                    <h2 class="w-75">how we work with our clients</h2>
+                    <p>At Berimbolo Security, we work by first understanding our clients' needs through detailed risk assessments. Then, we deliver comprehensive security solutions, including installation of systems and 24/7 monitoring, with continuous support to ensure complete protection.</p>
+                    <a class="btn btn-dark dd" href="#" data-bs-toggle="modal" data-bs-target="#marwa2">contact us <i class="fa light fa-arrow-right"></i></a>
+                </article>
+            </div>
+
+            <div class="row justify-content-center mt-5 gap-5 cc gg">
+                <article class="col-12 col-md-5 lh-3 my-auto  ">
+                    <h2 class="w-75">dream until your dreams come true</h2>
+                    <p>"Dream until your dreams come true" reflects Berimbolo Security's mission for growth. With rising demand, they're creating a website to showcase their services—security assessments, alarm systems, CCTV, and 24/7 monitoring—while ensuring a smooth experience for both mobile and desktop users.</p>
+                    <a class="btn btn-dark dd" href="#" data-bs-toggle="modal" data-bs-target="#marwa2">contact us <i class="fa light fa-arrow-right"></i></a>
+                </article>
+                <div class="col-12 col-md-3 clin" style="background-image: url(man-woman-tablet-business-city-smile-approval-deal-notification-contact-people-partner-digital-touchscreen-325843609.webp);"></div>
+            </div>
+            <!-- section1 end -->
+
+            <!-- section2 start -->
+            <section class="mt-5 text-center">
+                <h2>our core values</h2>
+                <p>our values shape the culture of our organization and define the character of our company</p>
+                <div class="row justify-content-center gap-3 mb-3">
+                    <div class="card values col-12 col-md-5" style="background-image: url(bg.png); background-size: cover;">
+                        <img src="images(2).png" class="card-img-top mx-auto" alt="...">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">Collaboration</h5>
+                            <p class="card-text">Collaboration is the process of two or more people or organizations working together to complete a task or achieve a goal.</p>
+                        </div>
+                    </div>
+                    <div class="card values col-12 col-md-5" style="background-image: url(bg.png); background-size: cover;">
+                        <img src="calc(3).png" class="card-img-top mx-auto" alt="...">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">Transparency</h5>
+                            <p class="card-text">Transparency, as used in science is operating in such a way that it is easy for others to see what actions are performed.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center gap-3">
+                    <div class="card values col-12 col-md-5" style="background-image: url(bg.png); background-size: cover;">
+                        <img src="arrow.png" class="card-img-top mx-auto" alt="...">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">Trust</h5>
+                            <p class="card-text">Trust will help us foster a positive and productive environment that delivers value to our users and customers</p>
+                        </div>
+                    </div>
+                    <div class="card values col-12 col-md-5" style="background-image: url(bg.png); background-size: cover;">
+                        <img src="integrity.png" class="card-img-top mx-auto" alt="...">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">integrity</h5>
+                            <p class="card-text">Integrity ensures that we are honest, transparent, and ethical in all our interactions.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section2 end -->
+        </section>
+        <!-- team_work start -->
+        <section class="mt-5">
+            <h2 class="text-center mb-5">Our Perfect Team</h2>
+            <!-- group1 -->
+            <div class="row justify-content-center " style="gap: 100px;">
+                <!-- Team member 1 -->
+                <div class="d-flex team col-12 col-sm-6 col-md-4 gap-4">
+                    <img src="man1.png" class="col-4 img-fluid">
+                    <div class="col-8">
+                        <h5>John Miller</h5>
+                        <small class="text-primary">Technical Director</small>
+                        <p>Oversees security system development and ensures a smooth user experience across platforms.</p>
+                        <small>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-instagram col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-twitter col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-facebook col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-linkedin col-1"></i></a>
+                        </small>
+                    </div>
+                </div>
+                <!-- Team member 2 -->
+                <div class="d-flex team col-12 col-sm-6 col-md-4 gap-4">
+                    <img src="woman2.jpg" class="col-4 img-fluid">
+                    <div class="col-8">
+                        <h5>Sarah Johnson</h5>
+                        <small class="text-primary">Project Manager</small>
+                        <p>Coordinates security system installations and ensures timely project completion.</p>
+                        <small>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-instagram col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-twitter col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-facebook col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-linkedin col-1"></i></a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <!-- group2 -->
+            <div class="row justify-content-center mt-5" style="gap: 100px">
+                <!-- Team member 3 -->
+                <div class="d-flex team col-12 col-sm-6 col-md-4 gap-4">
+                    <img src="man3.png" class="col-4 img-fluid">
+                    <div class="col-8">
+                        <h5>David Lee</h5>
+                        <small class="text-primary">Security Consultant</small>
+                        <p>Provides consultations and personalized security solutions for clients.</p>
+                        <small>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-instagram col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-twitter col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-facebook col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-linkedin col-1"></i></a>
+                        </small>
+                    </div>
+                </div>
+                <!-- Team member 4 -->
+                <div class="d-flex team col-12 col-sm-6 col-md-4 gap-4">
+                    <img src="woman1.jpeg" class="col-4 img-fluid">
+                    <div class="col-8">
+                        <h5>Emily Harris</h5>
+                        <small class="text-primary">Cybersecurity Expert</small>
+                        <p>Manages risk assessments and digital safety, supports 24/7 monitoring for protection.</p>
+                        <small>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-instagram col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-twitter col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-facebook col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-linkedin col-1"></i></a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <!-- group3 -->
+            <div class="row justify-content-center  mt-5" style="gap: 100px">
+                <!-- Team member 5 -->
+                <div class="d-flex team col-12 col-sm-6 col-md-4 gap-4">
+                    <img src="man2.png" class="col-4 img-fluid">
+                    <div class="col-8">
+                        <h5>Michael Clark</h5>
+                        <small class="text-primary">Sales Manager</small>
+                        <p>Manages customer relations, sales, and installation of security systems.</p>
+                        <small>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-instagram col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-twitter col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-facebook col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-linkedin col-1"></i></a>
+                        </small>
+                    </div>
+                </div>
+                <!-- Team member 6 -->
+                <div class="d-flex team col-12 col-sm-6 col-md-4 gap-4">
+                    <img src="woman3.jpg" class="col-4 img-fluid">
+                    <div class="col-8">
+                        <h5>Laura Walker</h5>
+                        <small class="text-primary">Customer Relations Manager</small>
+                        <p>Maintains client communication and improves the service experience.</p>
+                        <small>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-instagram col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-twitter col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-facebook col-1"></i></a>
+                            <a href="#" class=" text-secondary"><i class="fa-brands fa-linkedin col-1"></i></a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- team_work end -->
+        <!-- testmonial start -->
+        <section class="testmonial mt-5">
+            <h2 class="text-center mb-5">our Testimonials </h2>
+            <div class="row gap-4 justify-content-center">
+                <div class="card col-3" style="width: 20rem;">
+                    <i class="fa-solid fa-quote-left" style="font-size: 30px;"></i>
+                    <div class="ww">
+                        <img src="man.png" class="shadow" style="border-radius: 50%;width: 200px;height: 200px;">
+                        <div class="card-body">
+                            <h5>John Smith,Homeowner</h5>
+                            <h6><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </h6>
+                            <p class="card-text">The security system from Fortix has given my family peace of mind. The installation was seamless, and the devices are user-friendly. Highly recommend!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-3" style="width: 20rem;">
+                    <i class="fa-solid fa-quote-left" style="font-size: 30px;"></i>
+                    <div class="ww">
+                        <img src="woman.png" class="shadow" style="border-radius: 50%;width: 200px;height: 200px;">
+                        <div class="card-body">
+                            <h5>Emily Davis, Business Owner</h5>
+                            <h6><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </h6>
+                            <p class="card-text">Fortix provided exceptional service and cutting-edge solutions for my office. Their support team is always available, making it easy to handle any issues."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-3" style="width: 20rem;">
+                    <i class="fa-solid fa-quote-left" style="font-size: 30px;"></i>
+                    <div class="ww">
+                        <img src="images(1).png" class="shadow" style="border-radius: 50%;width: 200px;height: 200px;">
+                        <div class="card-body">
+                            <h5>Ahmed Ali, IT Specialist</h5>
+                            <h6><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </h6>
+                            <p class="card-text">I trust Fortix for their reliable and advanced technology. Their smart cameras and sensors ensure top-notch safety for my property.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testmonial end -->
+    </main>
+    <!-- about_us end -->
+    <!-- locations start -->
+    <section class="locations mt-5 section" id="locations" style="padding-top: 70px;margin-bottom: 20px;">
+        <h2 class="text-center">Company Locations</h2>
+        <div class="gallary mt-5">
+            <div class="row gap-5 justify-content-center mb-3">
+                <div class="card-area col-12 col-md-6 col-lg-3">
+                    <div class="card card1 ">
+                        <img src="america-pictures-r6jsqyj9mgl0bwxw.jpg" >
+                        <div class="overlay">
+                            <h4>United States (America)</h4>
+                            <p>The main branch in the U.S. is situated in a major city, serving clients across North America.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-area  col-12 col-md-6 col-lg-3 ">
+                    <div class="card card1">
+                        <img src="france.jpg" alt="">
+                        <div class="overlay">
+                            <h4>France</h4>
+                            <p>Located in one of the major cities, this branch offers comprehensive services, including security risk assessments, alarm system installations, and CCTV setups.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-area col-12 col-md-6 col-lg-3">
+                    <div class="card card1 ">
+                        <img src="uk.webp" alt="">
+                        <div class="overlay">
+                            <h4>United Kingdom (UK)</h4>
+                            <p>This branch specializes in providing high-quality security solutions for businesses and residential properties, with a focus on innovation and reliability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gap-5 justify-content-center mt-3">
+                <div class="card-area col-12 col-md-6 col-lg-3">
+                    <div class="card card1">
+                        <img src="german.jpg" alt="">
+                        <div class="overlay">
+                            <h4>Germany</h4>
+                            <p>This branch is renowned for utilizing cutting-edge German technology in the security sector.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-area col-12 col-md-6 col-lg-3">
+                    <div class="card card1">
+                        <img src="spain.jpg" alt="">
+                        <div class="overlay">
+                            <h4>Spain</h4>
+                            <p>The Spanish branch focuses on delivering exceptional services tailored to clients in the region.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-area col-12 col-md-6 col-lg-3">
+                    <div class="card card1">
+                        <img src="canda.jpg" alt="">
+                        <div class="overlay">
+                            <h4>Canada</h4>
+                            <p>Located in a key metropolitan area, the Canadian branch offers tailored security services, including 24/7 monitoring, ensuring complete protection for its clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- locations end -->
+    <!-- products start -->
+    <main class="mt-5 section" id="products" style="padding-top: 70px;margin-bottom: 20px;">
+        <h2 class="text-center">all products</h2> 
+        <!-- section1 start -->
+        <section id="section1" class="mt-5">
+            <div class="d-flex ms-5">
+                <div class="h2 me-2 bg-dark bg-opacity-75"></div>
+                <h2>smart locks</h2>
+            </div>
+            <div class="row justify-content-evenly gap-5 mt-3 ">
+                <!-- Card 1 -->
+                <div class="card d-flex justify-content-center align-items-center pt-3 ff" style="width: 15rem; height: 40vh;">
+                    <input type="checkbox" id="toggleHeart1" class="d-none">
+                    <label for="toggleHeart1">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+                    <div class="row justify-content-center align-items-center bg-dark bg-opacity-50 py-2" style="height: 50%; width: 100%;">
+                        <img src="lock1.png" class="card-img-top col-4" style="width: 70px; height: 100px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Doorbell Camera</h5>
+                        <small class="card-text text-muted">EGP 17,749.00 <br> <del>EGP 2000.00 </del></small>
+                        <a href="#" class="btn btn-primary">add to card <i class="fa fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card d-flex justify-content-center align-items-center pt-3" style="width: 15rem; height: 40vh;">
+                    <input type="checkbox" id="toggleHeart2" class="d-none">
+                    <label for="toggleHeart2">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+                    <div class="row justify-content-center align-items-center bg-dark bg-opacity-50 py-2" style="height: 50%; width: 100%;">
+                        <img src="lock2.png" class="card-img-top col-4" style="width: 160px; height: 100px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Door Lock</h5>
+                        <small class="card-text text-muted">EGP 19,749.00 <br> <del>EGP 25,584.00 </del></small>
+                        <a href="#" class="btn btn-primary">add to card <i class="fa fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card d-flex justify-content-center align-items-center pt-3" style="width: 15rem; height: 40vh;">
+                    <input type="checkbox" id="toggleHeart3" class="d-none">
+                    <label for="toggleHeart3">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+                    <div class="row justify-content-center align-items-center bg-dark bg-opacity-50 py-2" style="height: 50%; width: 100%;">
+                        <img src="lock3.png" class="card-img-top col-4" style="width: 150px; height: 100px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Lock</h5>
+                        <small class="card-text text-muted">EGP 12,399.00 <br> <del>EGP 16,029.00 </del></small>
+                        <a href="#" class="btn btn-primary">add to card <i class="fa fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card d-flex justify-content-center align-items-center pt-3" style="width: 15rem; height: 40vh;">
+                    <input type="checkbox" id="toggleHeart4" class="d-none">
+                    <label for="toggleHeart4">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+                    <div class="row justify-content-center align-items-center bg-dark bg-opacity-50 py-2" style="height: 50%; width: 100%;">
+                        <img src="lock4.png" class="card-img-top col-4" style="width: 160px; height: 100px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Lock</h5>
+                        <small class="card-text text-muted">EGP 12,749.00 <br> <del>EGP 21,584.00 </del></small>
+                        <a href="#" class="btn btn-primary">add to card <i class="fa fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- section1 end -->
+        <!-- section2 start -->
+        <section id="section2" class="mt-5">
+            <div class="d-flex ms-5">
+                <div class="h2 me-2 bg-dark bg-opacity-75"></div>
+                <h2>sensors</h2>
+            </div>
+            <div class="row justify-content-evenly gap-5 mt-3">
+                <!-- Card 1 -->
+                <div class="card d-flex justify-content-center align-items-center pt-3" style="width: 15rem; height: 40vh;">
+                    <input type="checkbox" id="toggleHeart5" class="d-none">
+                    <label for="toggleHeart5">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+                    <div class="row justify-content-center align-items-center bg-dark bg-opacity-50 py-2" style="height: 50%; width: 100%;">
+                        <img src="sensor1.png" class="card-img-top col-4" style="width: 150px; height: 100px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Doorbell Camera</h5>
+                        <small class="card-text text-muted">EGP 17,749.00 <br> <del>EGP 2000.00 </del></small>
+                        <a href="#" class="btn btn-primary">add to card <i class="fa fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card d-flex justify-content-center align-items-center pt-3" style="width: 15rem; height: 40vh;">
+                    <input type="checkbox" id="toggleHeart6" class="d-none">
+                    <label for="toggleHeart6">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+                    <div class="row justify-content-center align-items-center bg-dark bg-opacity-50 py-2" style="height: 50%; width: 100%;">
+                        <img src="sensor2.png" class="card-img-top col-4" style="width: 160px; height: 100px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Door Lock</h5>
+                        <small class="card-text text-muted">EGP 19,749.00 <br> <del>EGP 25,584.00 </del></small>
+                        <a href="#" class="btn btn-primary">add to card <i class="fa fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card d-flex justify-content-center align-items-center pt-3" style="width: 15rem; height: 40vh;">
+                    <input type="checkbox" id="toggleHeart7" class="d-none">
+                    <label for="toggleHeart7">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+                    <div class="row justify-content-center align-items-center bg-dark bg-opacity-50 py-2" style="height: 50%; width: 100%;">
+                        <img src="sensor3.png" class="card-img-top col-4" style="width: 150px; height: 100px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Lock</h5>
+                        <small class="card-text text-muted">EGP 12,399.00 <br> <del>EGP 16,029.00 </del></small>
+                        <a href="#" class="btn btn-primary">add to card <i class="fa fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card d-flex justify-content-center align-items-center pt-3" style="width: 15rem; height: 40vh;">
+                    <input type="checkbox" id="toggleHeart8" class="d-none">
+                    <label for="toggleHeart8">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+                    <div class="row justify-content-center align-items-center bg-dark bg-opacity-50 py-2" style="height: 50%; width: 100%;">
+                        <img src="sensor4.png" class="card-img-top col-4" style="width: 160px; height: 100px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Lock</h5>
+                        <small class="card-text text-muted">EGP 12,749.00 <br> <del>EGP 21,584.00 </del></small>
+                        <a href="#" class="btn btn-primary">add to card <i class="fa fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- section2 end -->
+    </main>
+    <!-- products end -->
+    <!-- FAQ start -->
+    <div class="container section" id="FAQ" style="padding-top: 70px;margin-bottom: 20px;">
+        <div class="row justify-content-between align-items-center">
+            <img src="FAQ.png" class="col-md-5 img-fluid" alt="FAQ Image">
+            <div class="col-md-6">
+                <div class="tt">
+                    <h1>FAQ</h1>
+                    <div class="h3 me-2 bg-dark bg-opacity-75"></div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is the range of your wireless security devices?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Our wireless devices can cover up to 2000 meters in an open space, ensuring reliable communication.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Do your products require a professional to install?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>While our products are designed for easy installation, we recommend professional setup for optimal performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Can I control the security system remotely?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Yes, you can control the entire system through our mobile app, available for iOS and Android devices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                What happens if there is a power outage?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>All our systems are equipped with backup batteries that ensure functionality during power outages.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Do you provide 24/7 monitoring services?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Yes, we offer 24/7 professional monitoring services to ensure your property is always protected.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                What types of security cameras do you offer?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>We offer a variety of security cameras including indoor, outdoor, and PTZ (Pan-Tilt-Zoom) cameras for various security needs.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                How long does the installation process take?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>The installation process typically takes 2-4 hours depending on the complexity of the system and the site conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Can the security system be integrated with other smart home devices?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Yes, our security system can be integrated with other smart home devices such as lights, thermostats, and locks to enhance your home automation experience.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ end -->
+    <!-- login start -->
+    <section class="login mt-5 section" id="login" style="padding-top: 70px;margin-bottom: 20px;">
+        <div class="container">
+            <div class="row justify-content-center align-items-center shadow ">
+                <h2 class="text-center mt-4 mb-4">Welcome to Berimbolo</h2>
+                <form class="col-md-6 p-4  rounded ff">
+                    <div class="mb-3">
+                        <label for="uu" class="form-label">Email</label>
+                        <input type="email" id="uu" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="oo" class="form-label">Password</label>
+                        <input type="password" id="oo" class="form-control" placeholder="Enter your password" required>
+                    </div>
+                    <div class="text-end mb-3">
+                        <a href="#" class="text-decoration-none link">Forgot the password?</a>
+                    </div>
+                    <div class="d-flex flex-column align-items-center gap-3 w-100">
+                        <button type="submit" class="btn btn-primary rounded-pill w-75">Sign In</button>
+                        <small class=" text-center">or</small>
+                        <button type="button" class="btn btn-outline-danger rounded-pill w-75">
+                            <img src="google.png" style="width: 30px;"> Log in with Google
+                        </button>
+                        <button type="button" class="btn btn-outline-primary rounded-pill w-75">
+                            <i class="fa-brands fa-facebook" style="font-size: 30px;"></i> Log in with Facebook
+                        </button>
+                    </div>
+                </form>
+                <div class="col-md-6 d-none d-md-block">
+                    <img src="about us.png" class="img-fluid rounded " alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- login end -->
+    <!-- footer start -->
+    <footer class="subscripe ">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-7 d-flex justify-content-between">
+                    <div>
+                        <h5>Resources</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Customer Stories</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Security Tips</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Company</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Social</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">LinkedIn <i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#">Twitter <i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#">Facebook <i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#">Instagram <i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 xx">
+                    <h2>Stay Secure with Berimbolo</h2>
+                    <div class="enter d-flex">
+                        <input type="email" placeholder="Enter your email to stay updated...">
+                        <a class="hh" href="#">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Berimbolo Security. <span>Support</span> <span>Privacy Policy</span> <span>Terms of Service</span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+<script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "h7GevdeNkeLk0zUJwj7Lj",
+            domain: "www.chatbase.co"
+        }
+</script>
+<script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="h7GevdeNkeLk0zUJwj7Lj"
+    domain="www.chatbase.co"
+    defer>
+</script>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+footer a:hover{
+    border-bottom: 2px solid #565555;
+}
+.navbar-collapse {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+    }
+.navbar-nav {
+        justify-content: center; 
+        margin: 0 auto; 
+    }
+.d-flex.justify-content-end {
+        gap: 15px; 
+        align-items: center;
+    }
+a img{
+    width: 30px;
+}
+nav a:hover{
+    color: #fff;
+    border-bottom: 2px solid snow;
+    background-color: rgba(81, 79, 79, 0.2); 
+}
+.link{
+    text-decoration: none;
+    color: #000;
+}
+
+.oo{
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    position: relative;
+}
+ul{
+    list-style: none;
+    line-height: 25px;
+}
+
+.one img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    z-index: -1;
+}
+
+.one{
+    height: 100vh;
+    font-size: 20px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+.one h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+.one p{
+    width: 54%;
+}
+.card1{
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    transition:  0.5s;
+    border-radius: 10px;
+    height: 350px;
+    display: block;
+}
+.overlay{
+    height: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(transparent,#1c1c1c 100%);
+    transition:  0.5s;
+    overflow: hidden;
+    color: white;
+    padding: 0 50px;
+}
+.overlay h4{
+    margin-top: 55%;
+    margin-bottom: 5px;
+
+}
+.card1:hover img {
+    transform: scale(1.1);
+}
+.card:hover .overlay{
+    height: 100%;
+}
+h6{
+    color: gold;
+}
+.shadow{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body{
+    text-transform: capitalize;
+}
+.clin {
+    width: 45%;
+    height: 35vh;
+    background-repeat: no-repeat;
+    align-content: center;
+    border-radius: 25px;
+}
+.values img{
+    width: 70px;
+    height: 70px;
+}
+.values{
+    color: #fff;
+}
+.team img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.subscripe {
+    background-color: darkgray;
+    padding: 20px 0;
+}
+
+.enter input {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 15px;
+}
+
+.enter a {
+    height: 50px;
+    width: 130px;
+    background-color: #204cda;
+    color: #fff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: absolute;
+    right: 60px;
+}
+
+p span {
+    margin: 0 5px;
+    padding-left: 10px;
+    border-left: 1px solid gray;
+}
+
+.list-unstyled {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.one1 img{
+    width: 50px;
+}
+.one1 {
+    width: 300px;
+    height: 14vh;
+}
+.one1 .row{
+    height: 14vh;
+}
+.h2{
+    border-radius: 50px ;
+    width: 10px;
+    height: 5vh;
+}
+.h3{
+    border-radius: 50px ;
+    width: 70px;
+    height: 1vh;
+    margin-bottom: 20px;
+}
+.fa-heart {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 25px;
+    color: #fff;
+}
+.accordion-header button{
+    font-size: 20px;
+    font-weight: 3000;
+}
+.accordion-body p{
+    color: #525151;
+}
+input[type="checkbox"]:checked + label .fa-heart {
+    color: #e22c2c;
+}
+.accordion-button:focus{
+    outline: none;
+    box-shadow: none;
+    background-color:white;
+}
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar {
+    background-color: #343a40 !important;
+    color: #ffffff !important;
+}
+body.light-theme .modal-content {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark Theme for Modal */
+body.dark-theme .modal-content {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Accordion Styles */
+body.light-theme .accordion-button {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+body.dark-theme .accordion-button {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+body.dark-theme .btn-close {
+    filter: invert(1); 
+}
+.section {
+    display: none;
+}
+
+#home {
+    display: block;
+}
+
